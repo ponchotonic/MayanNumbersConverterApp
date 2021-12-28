@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "834663168481",
+    "project_id": "numeros-mayas-420df",
+    "storage_bucket": "numeros-mayas-420df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834663168481:android:f56244c861995ecc663aa0",
+        "android_client_info": {
+          "package_name": "com.alfonsocastro.mayannumbersconverter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834663168481-fhotjvlbshs0nfvhv3n8ortvcph8kead.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alfonsocastro.mayannumbersconverter",
+            "certificate_hash": "7bef0026ea22fdfd52da6f911e1ccd1c90004efe"
+          }
+        },
+        {
+          "client_id": "834663168481-fappkqforbnap1ephadq4eu8nm8085kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMhyh-qrhN7ci1lwjevywgu-xj3DUm_9s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834663168481-fappkqforbnap1ephadq4eu8nm8085kb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/share_action"
+        android:icon="?attr/actionModeShareDrawable"
+        android:title="@string/share"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/rate_action"
+        android:icon="@drawable/ic_baseline_rate_review_24"
+        android:title="@string/rate"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/about_action"
+        android:title="@string/about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/privacy_policy_action"
+        android:title="@string/privacy_policy"
+        app:showAsAction="never" />
+</menu>

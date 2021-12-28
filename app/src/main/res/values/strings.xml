@@ -1,0 +1,32 @@
+<resources>
+    <!-- Screen Titles -->
+    <string name="app_name">Mayan Numbers Converter</string>
+    <string name="mayan_numbers">Mayan Numbers</string>
+    <string name="convert_to_mayan">Convert to Mayan</string>
+    <string name="convert_to_decimal">Convert to Decimal</string>
+
+    <string name="share_app_title">Share with your friends</string>
+    <string name="share_app_text">Hey! I found an app to convert mayan numbers, you should try it! Here\'s the link: %1$s</string>
+    <string name="about_title">About Us</string>
+    <string name="about_description">This app is designed to make your life easier if you need to convert from Decimal to Mayan numbers and vice versa.\nI was looking for the apps available in 2021 and there were only a few, none of them were up to date or beautiful. So I decided to make it for my Android development portfolio.\n
+        If you discover any errors or have suggestions for improvements, please do not hesitate to contact me.
+    </string>
+    <string name="about_contact_link">Contact Me</string>
+
+    <string name="convert">Convert</string>
+    <string name="delete">Delete</string>
+    <string name="clear">Clear</string>
+    <string name="ac">AC</string>
+    <string name="equal_sign">=</string>
+    <string name="choose_your_path">Choose your path:</string>
+    <string name="decimal_to_mayan">Decimal to Mayan</string>
+    <string name="mayan_to_decimal">Mayan to Decimal</string>
+    <string name="enter_a_number">Enter a Decimal Number</string>
+
+    <!-- Menu items -->
+    <string name="about">About this App</string>
+    <string name="rate">Rate Us!</string>
+    <string name="share">Share this app</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+</resources>

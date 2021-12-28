@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Convertidor de Números Mayas</string>
+    <string name="convert_to_mayan">Convertir a Maya</string>
+    <string name="convert_to_decimal">Convertir a Decimal</string>
+    <string name="convert">Convertir</string>
+    <string name="delete">Borrar</string>
+    <string name="clear">Limpiar</string>
+    <string name="ac">AC</string>
+    <string name="equal_sign">=</string>
+    <string name="choose_your_path">Elige tu camino:</string>
+    <string name="decimal_to_mayan">Decimal a Maya</string>
+    <string name="mayan_to_decimal">Maya a Decimal</string>
+    <string name="enter_a_number">Escribe un Número Decimal</string>
+    <string name="about">Acerca de la App</string>
+    <string name="rate">¡Califícanos!</string>
+    <string name="share">Comparte esta App</string>
+    <string name="privacy_policy">Política de Privacidad</string>
+    <string name="mayan_numbers">Números Mayas</string>
+    <string name="share_app_title">Comparte con tus amigos</string>
+    <string name="share_app_text">Hey! Encontré una app para convertir números mayas, deberías probarla! Este es el enlace: %1$s</string>
+    <string name="about_title">Acerca De</string>
+    <string name="about_description"> Esta app esta diseñada para hacerte la vida más fácil si necesitas convertir de números decimales a mayas y visceversa.\nEstaba buscando las aplicaciones disponibles en 2021 y había solo unas pocas, ninguna de ellas estaba actualizada ni eran hermosas. Así que decidí hacerla para mi cartera de desarrollo de Android.\n
+        Si descubres algún error o tienes sugerencias de mejoras, no dudes en ponerte en contacto conmigo.
+    </string>
+    <string name="about_contact_link">Contáctame</string>
+</resources>

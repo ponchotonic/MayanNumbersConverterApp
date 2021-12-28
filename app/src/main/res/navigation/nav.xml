@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    android:label="@string/decimal_to_mayan"
+    app:startDestination="@id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="com.alfonsocastro.mayannumbersconverter.ui.main.MainFragment"
+        android:label="@string/mayan_numbers"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_to_mayan"
+            app:destination="@id/toMayanFragment" />
+        <action
+            android:id="@+id/action_to_decimal"
+            app:destination="@id/toDecimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toMayanFragment"
+        android:name="com.alfonsocastro.mayannumbersconverter.ui.mayan.ToMayanFragment"
+        android:label="@string/convert_to_mayan"
+        tools:layout="@layout/to_mayan_fragment" />
+    <fragment
+        android:id="@+id/toDecimalFragment"
+        android:name="com.alfonsocastro.mayannumbersconverter.ui.decimal.ToDecimalFragment"
+        android:label="@string/convert_to_decimal"
+        tools:layout="@layout/to_decimal_fragment" />
+</navigation>
