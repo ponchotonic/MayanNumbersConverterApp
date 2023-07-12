@@ -24,8 +24,9 @@ class MayanConverter {
 
         fun convertToDecimal(base20: String): Int {
             var decimal = 0.0
-            for ( i in 0..base20.lastIndex) {
-                val digit = base20ToDecimalCharacter(base20[i])
+            val base20Reversed = base20.reversed()
+            for ( i in 0..base20Reversed.lastIndex) {
+                val digit = base20ToDecimalCharacter(base20Reversed[i])
                 decimal += (digit * 20.0.pow(i))
             }
             return decimal.toInt()

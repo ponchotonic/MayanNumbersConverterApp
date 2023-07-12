@@ -18,20 +18,21 @@
         android:textAlignment="textEnd"
         android:textColor="@color/white"
         android:textSize="60sp"
-        ads:layout_constraintBottom_toTopOf="@+id/mayan_recycler"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/mayan_recycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="012345678901234567890123" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mayan_recycler"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
-        ads:layout_constraintBottom_toTopOf="@+id/divider_view"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent"
-        ads:layout_wrapBehaviorInParent="horizontal_only"
+        android:scrollbars="horizontal"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_wrapBehaviorInParent="horizontal_only"
         tools:itemCount="1"
         tools:listitem="@layout/list_item_mayan_number">
 
@@ -42,15 +43,15 @@
         android:layout_width="0dp"
         android:layout_height="2dp"
         android:background="@color/queen_blue"
-        ads:layout_constraintBottom_toTopOf="@+id/m00_button"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/m00_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/m00_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m0"
-        ads:layout_constraintBottom_toTopOf="@+id/m05_button"
+        app:layout_constraintBottom_toTopOf="@+id/m05_button"
         app:layout_constraintEnd_toStartOf="@id/m01_button"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -58,8 +59,8 @@
         android:id="@+id/m01_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m1"
-        ads:layout_constraintBottom_toBottomOf="@+id/m00_button"
-        ads:layout_constraintTop_toTopOf="@+id/m00_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m00_button"
+        app:layout_constraintTop_toTopOf="@+id/m00_button"
         app:layout_constraintEnd_toStartOf="@+id/m02_button"
         app:layout_constraintStart_toEndOf="@+id/m00_button" />
 
@@ -67,8 +68,8 @@
         android:id="@+id/m02_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m2"
-        ads:layout_constraintBottom_toBottomOf="@+id/m01_button"
-        ads:layout_constraintTop_toTopOf="@+id/m01_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m01_button"
+        app:layout_constraintTop_toTopOf="@+id/m01_button"
         app:layout_constraintEnd_toStartOf="@+id/m03_button"
         app:layout_constraintStart_toEndOf="@+id/m01_button" />
 
@@ -76,8 +77,8 @@
         android:id="@+id/m03_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m3"
-        ads:layout_constraintBottom_toBottomOf="@+id/m02_button"
-        ads:layout_constraintTop_toTopOf="@+id/m02_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m02_button"
+        app:layout_constraintTop_toTopOf="@+id/m02_button"
         app:layout_constraintEnd_toStartOf="@+id/m04_button"
         app:layout_constraintStart_toEndOf="@+id/m02_button" />
 
@@ -85,8 +86,8 @@
         android:id="@+id/m04_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m4"
-        ads:layout_constraintBottom_toBottomOf="@+id/m03_button"
-        ads:layout_constraintTop_toTopOf="@+id/m03_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m03_button"
+        app:layout_constraintTop_toTopOf="@+id/m03_button"
         app:layout_constraintEnd_toStartOf="@id/delete_image_button"
         app:layout_constraintStart_toEndOf="@+id/m03_button" />
 
@@ -98,7 +99,7 @@
         android:contentDescription="@string/delete"
         android:scaleType="fitCenter"
         android:src="@android:drawable/ic_input_delete"
-        ads:layout_constraintStart_toEndOf="@+id/m04_button"
+        app:layout_constraintStart_toEndOf="@+id/m04_button"
         app:layout_constraintBottom_toBottomOf="@+id/m04_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/m04_button"
@@ -108,45 +109,45 @@
         android:id="@+id/m05_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m5"
-        ads:layout_constraintBottom_toTopOf="@+id/m10_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m06_button"
-        ads:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/m10_button"
+        app:layout_constraintEnd_toStartOf="@+id/m06_button"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/m06_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m6"
-        ads:layout_constraintBottom_toBottomOf="@+id/m05_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m07_button"
-        ads:layout_constraintStart_toEndOf="@+id/m05_button"
-        ads:layout_constraintTop_toTopOf="@+id/m05_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m05_button"
+        app:layout_constraintEnd_toStartOf="@+id/m07_button"
+        app:layout_constraintStart_toEndOf="@+id/m05_button"
+        app:layout_constraintTop_toTopOf="@+id/m05_button" />
 
     <ImageButton
         android:id="@+id/m07_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m7"
-        ads:layout_constraintBottom_toBottomOf="@+id/m06_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m08_button"
-        ads:layout_constraintStart_toEndOf="@+id/m06_button"
-        ads:layout_constraintTop_toTopOf="@+id/m06_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m06_button"
+        app:layout_constraintEnd_toStartOf="@+id/m08_button"
+        app:layout_constraintStart_toEndOf="@+id/m06_button"
+        app:layout_constraintTop_toTopOf="@+id/m06_button" />
 
     <ImageButton
         android:id="@+id/m08_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m8"
-        ads:layout_constraintBottom_toBottomOf="@+id/m07_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m09_button"
-        ads:layout_constraintStart_toEndOf="@+id/m07_button"
-        ads:layout_constraintTop_toTopOf="@+id/m07_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m07_button"
+        app:layout_constraintEnd_toStartOf="@+id/m09_button"
+        app:layout_constraintStart_toEndOf="@+id/m07_button"
+        app:layout_constraintTop_toTopOf="@+id/m07_button" />
 
     <ImageButton
         android:id="@+id/m09_button"
         style="@style/MayanImageButton"
         android:src="@drawable/m9"
-        ads:layout_constraintBottom_toBottomOf="@+id/m08_button"
-        ads:layout_constraintEnd_toStartOf="@+id/ac_button"
-        ads:layout_constraintStart_toEndOf="@+id/m08_button"
-        ads:layout_constraintTop_toTopOf="@+id/m08_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m08_button"
+        app:layout_constraintEnd_toStartOf="@+id/ac_button"
+        app:layout_constraintStart_toEndOf="@+id/m08_button"
+        app:layout_constraintTop_toTopOf="@+id/m08_button" />
 
     <Button
         android:id="@+id/ac_button"
@@ -156,60 +157,60 @@
         android:contentDescription="@string/clear"
         android:text="@string/ac"
         android:textSize="20sp"
-        ads:layout_constraintBottom_toBottomOf="@+id/m09_button"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toEndOf="@+id/m09_button"
-        ads:layout_constraintTop_toTopOf="@+id/m09_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m09_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/m09_button"
+        app:layout_constraintTop_toTopOf="@+id/m09_button" />
 
     <ImageButton
         android:id="@+id/m10_button"
         style="@style/MayanImageButton"
         android:src="@drawable/ma"
-        ads:layout_constraintBottom_toTopOf="@+id/m15_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m11_button"
-        ads:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/m15_button"
+        app:layout_constraintEnd_toStartOf="@+id/m11_button"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/m11_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mb"
-        ads:layout_constraintBottom_toBottomOf="@+id/m10_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m12_button"
-        ads:layout_constraintStart_toEndOf="@+id/m10_button"
-        ads:layout_constraintTop_toTopOf="@+id/m10_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m10_button"
+        app:layout_constraintEnd_toStartOf="@+id/m12_button"
+        app:layout_constraintStart_toEndOf="@+id/m10_button"
+        app:layout_constraintTop_toTopOf="@+id/m10_button" />
 
     <ImageButton
         android:id="@+id/m12_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mc"
-        ads:layout_constraintBottom_toBottomOf="@+id/m11_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m13_button"
-        ads:layout_constraintStart_toEndOf="@+id/m11_button"
-        ads:layout_constraintTop_toTopOf="@+id/m11_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m11_button"
+        app:layout_constraintEnd_toStartOf="@+id/m13_button"
+        app:layout_constraintStart_toEndOf="@+id/m11_button"
+        app:layout_constraintTop_toTopOf="@+id/m11_button" />
 
     <ImageButton
         android:id="@+id/m13_button"
         style="@style/MayanImageButton"
         android:src="@drawable/md"
-        ads:layout_constraintBottom_toBottomOf="@+id/m12_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m14_button"
-        ads:layout_constraintStart_toEndOf="@+id/m12_button"
-        ads:layout_constraintTop_toTopOf="@+id/m12_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m12_button"
+        app:layout_constraintEnd_toStartOf="@+id/m14_button"
+        app:layout_constraintStart_toEndOf="@+id/m12_button"
+        app:layout_constraintTop_toTopOf="@+id/m12_button" />
 
     <ImageButton
         android:id="@+id/m14_button"
         style="@style/MayanImageButton"
         android:src="@drawable/me"
-        ads:layout_constraintBottom_toBottomOf="@+id/m13_button"
-        ads:layout_constraintEnd_toStartOf="@id/equal_button"
-        ads:layout_constraintStart_toEndOf="@+id/m13_button"
-        ads:layout_constraintTop_toTopOf="@+id/m13_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m13_button"
+        app:layout_constraintEnd_toStartOf="@id/equal_button"
+        app:layout_constraintStart_toEndOf="@+id/m13_button"
+        app:layout_constraintTop_toTopOf="@+id/m13_button" />
 
     <ImageButton
         android:id="@+id/m15_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mf"
-        ads:layout_constraintBottom_toTopOf="@+id/decimal_bottom_banner"
+        app:layout_constraintBottom_toTopOf="@+id/decimal_bottom_banner"
         app:layout_constraintEnd_toStartOf="@+id/m16_button"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -217,8 +218,8 @@
         android:id="@+id/m16_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mg"
-        ads:layout_constraintBottom_toBottomOf="@+id/m15_button"
-        ads:layout_constraintTop_toTopOf="@+id/m15_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m15_button"
+        app:layout_constraintTop_toTopOf="@+id/m15_button"
         app:layout_constraintEnd_toStartOf="@+id/m17_button"
         app:layout_constraintStart_toEndOf="@+id/m15_button" />
 
@@ -226,8 +227,8 @@
         android:id="@+id/m17_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mh"
-        ads:layout_constraintBottom_toBottomOf="@+id/m16_button"
-        ads:layout_constraintTop_toTopOf="@+id/m16_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m16_button"
+        app:layout_constraintTop_toTopOf="@+id/m16_button"
         app:layout_constraintEnd_toStartOf="@+id/m18_button"
         app:layout_constraintStart_toEndOf="@+id/m16_button" />
 
@@ -235,18 +236,18 @@
         android:id="@+id/m18_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mi"
-        ads:layout_constraintBottom_toBottomOf="@+id/m17_button"
-        ads:layout_constraintEnd_toStartOf="@+id/m19_button"
-        ads:layout_constraintStart_toEndOf="@+id/m17_button"
-        ads:layout_constraintTop_toTopOf="@+id/m17_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m17_button"
+        app:layout_constraintEnd_toStartOf="@+id/m19_button"
+        app:layout_constraintStart_toEndOf="@+id/m17_button"
+        app:layout_constraintTop_toTopOf="@+id/m17_button" />
 
     <ImageButton
         android:id="@+id/m19_button"
         style="@style/MayanImageButton"
         android:src="@drawable/mj"
-        ads:layout_constraintBottom_toBottomOf="@+id/m18_button"
-        ads:layout_constraintStart_toEndOf="@+id/m18_button"
-        ads:layout_constraintTop_toTopOf="@+id/m18_button"
+        app:layout_constraintBottom_toBottomOf="@+id/m18_button"
+        app:layout_constraintStart_toEndOf="@+id/m18_button"
+        app:layout_constraintTop_toTopOf="@+id/m18_button"
         app:layout_constraintEnd_toStartOf="@id/equal_button" />
 
     <Button
@@ -257,10 +258,10 @@
         android:contentDescription="@string/convert"
         android:text="@string/equal_sign"
         android:textSize="48sp"
-        ads:layout_constraintBottom_toBottomOf="@+id/m19_button"
-        ads:layout_constraintEnd_toEndOf="parent"
-        ads:layout_constraintStart_toStartOf="@id/ac_button"
-        ads:layout_constraintTop_toTopOf="@+id/m14_button" />
+        app:layout_constraintBottom_toBottomOf="@+id/m19_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/ac_button"
+        app:layout_constraintTop_toTopOf="@+id/m14_button" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/decimal_bottom_banner"

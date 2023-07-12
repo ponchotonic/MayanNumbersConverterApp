@@ -30,7 +30,7 @@ class ToDecimalFragment : Fragment() {
 
         _binding = ToDecimalFragmentBinding.inflate(inflater, container, false)
 
-        binding.mayanRecycler.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, true)
+        binding.mayanRecycler.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 
         binding.apply {
 
