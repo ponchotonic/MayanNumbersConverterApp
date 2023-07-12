@@ -13,7 +13,7 @@
         android:layout_height="0dp"
         android:background="@color/queen_blue"
         android:fontFamily="@font/arapey"
-        android:gravity="bottom"
+        android:gravity="bottom|end"
         android:padding="8dp"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
@@ -40,7 +40,7 @@
     <View
         android:id="@+id/divider_view"
         android:layout_width="0dp"
-        android:layout_height="2px"
+        android:layout_height="2dp"
         android:background="@color/queen_blue"
         ads:layout_constraintBottom_toTopOf="@+id/m00_button"
         ads:layout_constraintEnd_toEndOf="parent"

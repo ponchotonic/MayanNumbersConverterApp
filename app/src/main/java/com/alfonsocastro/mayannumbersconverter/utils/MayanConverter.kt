@@ -42,7 +42,7 @@ class MayanConverter {
 
         private fun decimalToBase20Character(decimal: Int): Char? {
             val base20Character: Char
-            if (decimal>20) {
+            if (decimal>20 || decimal<0) {
                 return null
             } else {
                 base20Character = BASE_20_CHARACTERS[decimal]
