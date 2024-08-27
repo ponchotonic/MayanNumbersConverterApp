@@ -42,7 +42,7 @@ class ToMayanFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(ToMayanViewModel::class.java)
+        viewModel = ViewModelProvider(this)[ToMayanViewModel::class.java]
         viewModel.mayanNumberLiveData.observe(this.viewLifecycleOwner) {mayanString ->
             adapter?.submitList(mayanString.toList())
         }

@@ -7,11 +7,12 @@ class MayanConverter {
 
     companion object {
 
+        @Suppress("SpellCheckingInspection")
         private const val BASE_20_CHARACTERS = "0123456789ABCDEFGHIJK"
 
-        fun convertToBase20(_decimal: Int): String {
+        fun convertToBase20(decimalToConvert: Int): String {
             var mayanString = ""
-            var decimal = _decimal
+            var decimal = decimalToConvert
 
             do {
 

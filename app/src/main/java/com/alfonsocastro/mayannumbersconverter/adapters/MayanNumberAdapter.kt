@@ -1,6 +1,5 @@
 package com.alfonsocastro.mayannumbersconverter.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -42,7 +41,7 @@ class MayanNumberAdapter(private val inflater: LayoutInflater) :
         }
 
         override fun areContentsTheSame(oldItem: Char, newItem: Char): Boolean {
-            return oldItem.equals(newItem)
+            return oldItem == newItem
         }
 
     }

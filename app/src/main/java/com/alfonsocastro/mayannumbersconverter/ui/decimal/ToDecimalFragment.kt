@@ -68,7 +68,7 @@ class ToDecimalFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this).get(ToDecimalViewModel::class.java)
+        viewModel = ViewModelProvider(this)[ToDecimalViewModel::class.java]
         adapter = MayanNumberAdapter(layoutInflater)
         viewModel.mayanStringLiveData.observe(this.viewLifecycleOwner) { string ->
             adapter?.submitList(string.toList())

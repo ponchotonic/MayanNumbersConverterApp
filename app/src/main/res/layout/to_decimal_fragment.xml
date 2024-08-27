@@ -8,7 +8,6 @@
     tools:context=".ui.decimal.ToDecimalFragment">
 
     <TextView
-        android:id="@+id/decimal_result_text_view"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/queen_blue"
